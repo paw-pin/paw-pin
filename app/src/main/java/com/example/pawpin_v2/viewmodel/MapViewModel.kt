@@ -169,7 +169,7 @@ class MapViewModel(application: Application) : AndroidViewModel(application) {
 
     suspend fun getWalkingRoute(origin: LatLng, waypoints: List<LatLng>): List<LatLng> {
         return withContext(Dispatchers.IO) {
-            val apiKey =  "AIzaSyAhhu5XtP2g2u0Jzo4xcsTR4vrZ97ojUcQ"//BuildConfig.MAPS_API_KEY
+            val apiKey =  "XXXX"//BuildConfig.MAPS_API_KEY
             Log.d("API_KEY", "Using API Key: $apiKey")
 
             val waypointsStr = waypoints.joinToString("|") { "${it.latitude},${it.longitude}" }
